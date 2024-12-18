@@ -55,9 +55,9 @@ const RecordingForm = (recordingFormProps: RecordingFormProps) => {
   const isCreation = !recordingFormProps.recording;
 
   const recordingId = recordingFormProps.recording?.id;
-  const { isPending, execute } = isCreation
-    ? useServerAction(createRecording)
-    : useServerAction(editRecording);
+
+  const serverAction = isCreation ? createRecording : editRecording;
+  const { isPending, execute } = useServerAction(serverAction);
 
   const { description, recording, breadcrumbs } = recordingFormProps;
 
