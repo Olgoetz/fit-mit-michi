@@ -40,7 +40,7 @@ const Navbar = ({
   return (
     <nav
       className={cn(
-        "hidden md:flex absolute left-0 top-0 z-50 justify-between px-4 p-4 text-white w-full bg-transparent",
+        "hidden md:flex absolute md:left-0 md:top-0 left-[-1000%] z-50 justify-between px-4 p-4 text-white w-full bg-transparent",
         pathName !== "/" && "bg-gradient-to-r from-pink-700 to-pink-300"
       )}
     >

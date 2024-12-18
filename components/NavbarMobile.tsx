@@ -57,7 +57,7 @@ const NavbarMobile = ({
           </SheetTrigger>
           <SheetContent
             onCloseAutoFocus={(event) => event.preventDefault()}
-            className="text-white bg-pink-700"
+            className="text-white bg-pink-700 border-none"
             side={"left"}
           >
             <SheetHeader>
