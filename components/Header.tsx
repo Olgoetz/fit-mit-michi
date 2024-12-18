@@ -20,10 +20,10 @@ const Header = () => {
       >
         {/* <header className="relative w-full h-screen bg-gradient-to-r from-pink-700 to-pink-300 p-8"> */}
         {/* <div className="container mx-auto flex flex-col justify-center items-center h-full text-center"> */}
-        <h1 className="text-3xl md:text-7xl font-bold text-white text-center">
+        <h1 className="text-5xl md:text-7xl font-bold text-white text-center">
           Get in Shape!
         </h1>
-        <p className="font-extralight text-base md:text-4xl text-center py-4">
+        <p className="font-extralight text-lg md:text-4xl text-center py-4">
           Nimm jederzeit und überall an meinen On-Demand- und Live-Fitnesskursen
           teil.
         </p>

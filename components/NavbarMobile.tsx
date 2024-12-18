@@ -10,7 +10,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { LogIn, Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { SignedIn, UserButton, SignedOut, SignInButton } from "@clerk/nextjs";
@@ -19,7 +19,7 @@ import { usePathname } from "next/navigation";
 import { NavbarProps } from "@/types";
 import { NavbarItems } from "@/constants";
 
-const NavbarItemStyles = "cursor-pointer rounded-lg ";
+const NavbarItemStyles = "cursor-pointer rounded-lg";
 
 const NavbarMobile = ({
   userId,
@@ -92,9 +92,10 @@ const NavbarMobile = ({
                 <UserButton />
               </SignedIn>
               <SignedOut>
-                <SignInButton>
-                  <button className={NavbarItemStyles}>Einloggen</button>
-                </SignInButton>
+                <div className="flex items-center">
+                  <LogIn className="size-8 mr-6" />
+                  <SignInButton>Einloggen</SignInButton>
+                </div>
               </SignedOut>
             </ul>
           </SheetContent>
