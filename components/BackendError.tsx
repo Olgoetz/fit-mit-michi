@@ -3,6 +3,7 @@ import { ExclamationTriangleIcon } from "@radix-ui/react-icons";
 import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { BackendErrorProps } from "@/types";
 
 const BackendError = (props: BackendErrorProps) => {
   const { route, message, directionText } = props;
