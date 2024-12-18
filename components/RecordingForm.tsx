@@ -42,7 +42,6 @@ import {
   CardContent,
   CardFooter,
 } from "./ui/card";
-import Waitor from "./Waitor";
 
 // Schemas
 import { z } from "zod";
