@@ -10,7 +10,7 @@ import { IMAGE_MAX_UPLOAD_SIZE } from "@/constants";
 import { toast } from "sonner";
 import { FileUploaderProps } from "@/types";
 import { generatePresignedUploadUrl } from "@/lib/s3";
-import { formatForUrl, waitor } from "@/lib/utils";
+import { formatForUrl } from "@/lib/utils";
 import axios from "axios";
 
 //const controller = new AbortController();

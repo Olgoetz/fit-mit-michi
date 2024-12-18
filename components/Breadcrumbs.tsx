@@ -1,3 +1,4 @@
+import { Breadcrumb } from "@/types";
 import { clsx } from "clsx";
 import Link from "next/link";
 
