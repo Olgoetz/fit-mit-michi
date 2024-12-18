@@ -130,4 +130,22 @@ resource "aws_iam_user_policy" "this" {
 # }
 #}
 
+# Get secrets
 
+locals {
+
+  preprod_ssm_parameters = [
+    "/preprod/fit-mit-michi/clerk_secret_key",
+    "/preprod/fit-mit-michi/resend_api_key",
+    "/preprod/fit-mit-michi/stripe_api_secret_key",
+    "/preprod/fit-mit-michi/stripe_webhook_secret",
+    "/preprod/fit-mit-michi/sentry_auth_token",
+    "/preprod/fit-mit-michi/supabase_connection_string"
+  ]
+}
+
+
+data "aws_ssm_parameter" "preprod" {
+  for_each = toset(local.preprod_ssm_parameters)
+  name     = each.value
+}
