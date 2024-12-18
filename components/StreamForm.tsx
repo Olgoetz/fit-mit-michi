@@ -43,9 +43,9 @@ const StreamForm = (streamFormProps: StreamFormProps) => {
   const isCreation = !streamFormProps.stream;
 
   const streamId = streamFormProps.stream?.id;
-  const { isPending, execute } = isCreation
-    ? useServerAction(createStream)
-    : useServerAction(editStream);
+
+  const serverAction = isCreation ? createStream : editStream;
+  const { isPending, execute } = useServerAction(serverAction);
 
   const inputRef = useRef<HTMLInputElement>(null);
   const { breadcrumbs, description, stream } = streamFormProps;
