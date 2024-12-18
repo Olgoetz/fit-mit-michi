@@ -1,3 +1,5 @@
+import { LogLevel, LogOptions } from "@/types";
+
 // Map log levels to numeric values for comparison
 const logLevelMap: { [key in LogLevel]: number } = {
   debug: 1,

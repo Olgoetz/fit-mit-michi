@@ -20,7 +20,7 @@ output "technical_users" {
 
 
 output "vercel_project" {
-  value     = nonsensitive(vercel_project.this)
-  sensitive = false
+  value = vercel_project.this.team_id
+
 
 }
