@@ -43,6 +43,7 @@ const ContactForm = () => {
           width={400}
           height={400}
           className="rounded-lg"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <form action={formAction} className="space-y-4 md:col-span-2">
           <div>

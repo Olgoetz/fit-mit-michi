@@ -8,7 +8,6 @@ export default async function Layout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   const user = await auth();
-  console.log(user);
 
   const subscription = await isUserSubscribed();
   return (
