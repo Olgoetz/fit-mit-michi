@@ -8,5 +8,9 @@ terraform {
       source  = "integrations/github"
       version = "~> 6.4"
     }
+    stripe = {
+      source  = "lukasaron/stripe"
+      version = "~> 3.3"
+    }
   }
 }
