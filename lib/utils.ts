@@ -65,8 +65,11 @@ export function formatForUrl(input: string): string {
   // Trim whitespace
   const trimmedInput = input.trim();
 
+  // Remove blank spaces
+  const noSpaceInput = trimmedInput.replace(/\s/g, "-");
+
   // Encode unsafe characters
-  const encodedInput = encodeURIComponent(trimmedInput);
+  const encodedInput = encodeURIComponent(noSpaceInput);
 
   return encodedInput;
 }

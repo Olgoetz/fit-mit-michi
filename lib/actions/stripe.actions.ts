@@ -78,7 +78,7 @@ export const createCheckOutSession = async (id: string, type: string) => {
     } else {
       // Create session for single purchase
       session = await stripe.checkout.sessions.create({
-        // customer: ""
+        ...commonCheckoutProps,
         // @ts-ignore-next-line
         customer_email: customer?.email,
 

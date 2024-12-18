@@ -51,7 +51,7 @@
     "next-auth": "^5.0.0-beta.20",
     "next-themes": "^0.3.0",
     "next-video": "^1.4.0",
-    "prisma": "^6.0.1",
+    "prisma": "^6.1.0",
     "react": "^19.0.0",
     "react-canvas-confetti": "^2.0.7",
     "react-day-picker": "^9.2.1",
