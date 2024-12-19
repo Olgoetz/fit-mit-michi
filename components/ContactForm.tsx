@@ -31,7 +31,7 @@ const ContactForm = () => {
   }, [state]);
 
   return (
-    <div id="kontakt" className=" container mx-auto max-w-[1200px] ">
+    <div id="kontakt" className="p-8 container mx-auto max-w-[1200px] ">
       <div className="pb-12">
         <h2 className="text-2xl md:text-4xl font-bold">Kontakt</h2>
         <p className="text-pink-500 text-base">So erreichst du mich</p>
@@ -52,7 +52,7 @@ const ContactForm = () => {
               defaultValue={state.data?.name}
               required
               name="name"
-              placeholder="Max Mustermann"
+              placeholder="Dein Name"
             />
             {state.validationErrors && (
               <FormError styles="mt-2" message={state.validationErrors.name} />
@@ -64,7 +64,7 @@ const ContactForm = () => {
               defaultValue={state.data?.email}
               required
               name="email"
-              placeholder="max@mustermann.de"
+              placeholder="Deine Email"
             />
             {state.validationErrors && (
               <FormError styles="mt-2" message={state.validationErrors.email} />

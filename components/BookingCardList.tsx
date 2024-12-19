@@ -1,4 +1,3 @@
-import { getRecordings } from "@/lib/actions/recording.actions";
 import React from "react";
 import BookingCard from "./BookingCard";
 import { log } from "@/lib/logger";
@@ -20,12 +19,12 @@ export default async function BookingCardList({
   const filtered = items.filter((i) =>
     i.title.toLocaleLowerCase().includes(query)
   );
-  log({
-    level: "debug",
-    filePath: "/components/BookingCardList.tsx",
-    message: "Filtered items",
-    data: filtered,
-  });
+  // log({
+  //   level: "debug",
+  //   filePath: "/components/BookingCardList.tsx",
+  //   message: "Filtered items",
+  //   data: filtered,
+  // });
 
   return (
     <div>
